@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/atisavi.css}" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.4.1/css/bootstrap.min.css}">
+</head>
+
+
+<body>
+		<div id ="contenedor">
+			<div id ="cabecera">
+				<p id="demotext">ATISAVI</p>
+			</div>
+			<div id ="menu">
+	<ul id=”button2”>
+ <li><a th:href="@{list}"><p id="inicio1">Inicio</p></a></li>
+ <li><a th:href="@{list}"><p id="menu1">Producto</p></a></li>
+ <li><a th:href="@{list}"><p id="ingresa1">Registrate</p></a></li>
+ <li><a th:href="@{list}"><p id="registro1">Ingresa</p></a></li>
+ <li><a th:href="@{list}"><p id="quien1">Quienes somos</p></a></li>
+ 
+ 
+ </ul>
+			</div>
+			
+			<div id ="izquierda">
+			<div style="text-align: right; margin-bottom: 5px;">
+        <a th:href="@{/add}" class="btn btn-success" role="button">Añadir paciente</a>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Condición</th>
+            <th>Provincia</th>
+            <th>Dirección</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="movie : ${movies}">
+            <td th:text="${movie.id}"></td>
+            <td th:text="${movie.title}"></td>
+            <td th:text="${movie.releaseYear}"></td>
+            <td th:text="${movie.tags}"></td>
+            <td th:text="${movie.language}"></td>
+            <td th:text="${movie.country}"></td>
+            <td>
+                <a th:href="@{/edit/{id}(id=${movie.id})}" class="btn btn-success btn-sm" role="button">Actualizar</a>
+                <a th:href="@{/delete/{id}(id=${movie.id})}" class="btn btn-danger btn-sm" role="button">Eliminar</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  	
+			</div>
+			<div id ="derecha">
+				
+			</div>
+
+
+			
+			<div id ="pie">
+  	
+  	<p>Lima, Peru. 2020</p></div>
+		</div>
+	</body>
+	</html>		

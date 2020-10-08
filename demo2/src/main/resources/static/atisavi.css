@@ -1,0 +1,76 @@
+body { background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,83,62,1) 47%, rgba(0,212,255,1) 100%);}
+#contenedor{
+        
+        border:2px solid #ffffff;
+}
+#cabecera{
+       
+        height:10%;
+        margin:20px;
+        text-align: center;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,83,62,1) 47%, rgba(0,212,255,1) 100%);
+        border:2px solid #ffffff; 
+
+}
+#menu{
+      	height:10%;	
+        margin: 20px;
+        background-color:#ffffff;
+
+        text-align: center;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,83,62,1) 47%, rgba(0,212,255,1) 100%);
+        border:2px solid #ffffff; 
+      
+}
+
+
+#menu li{
+	margin: 5px;
+	display: inline-block;
+	
+
+}
+
+#menu ul li {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+#menu ul li a {
+	color:#000000;font-size: 35px; text-decoration: none;
+}
+
+
+#demotext {
+
+font-size: 80px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+
+
+
+
+#izquierda{
+        height:50%;
+        background:	#FFFFFF;
+       
+}
+#derecha{
+        height:50%;
+        
+        
+        
+}
+#pie{
+        margin: 50px;
+        height:20%;
+        text-align: center;
+        
+       
+        clear:both;
+}
