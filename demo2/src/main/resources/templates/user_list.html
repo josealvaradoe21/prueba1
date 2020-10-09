@@ -42,16 +42,16 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="movie : ${movies}">
-            <td th:text="${movie.id}"></td>
-            <td th:text="${movie.title}"></td>
-            <td th:text="${movie.releaseYear}"></td>
-            <td th:text="${movie.tags}"></td>
-            <td th:text="${movie.language}"></td>
-            <td th:text="${movie.country}"></td>
+        <tr th:each="usuarios : ${usuario}">
+            <td th:text="${usuarios.id}"></td>
+            <td th:text="${usuarios.nombre}"></td>
+            <td th:text="${usuarios.edad}"></td>
+            <td th:text="${usuarios.cargo}"></td>
+            <td th:text="${usuarios.provincia}"></td>
+            <td th:text="${usuarios.direccion}"></td>
             <td>
-                <a th:href="@{/edit/{id}(id=${movie.id})}" class="btn btn-success btn-sm" role="button">Actualizar</a>
-                <a th:href="@{/delete/{id}(id=${movie.id})}" class="btn btn-danger btn-sm" role="button">Eliminar</a>
+                <a th:href="@{/edit/{id}(id=${usuarios.id})}" class="btn btn-success btn-sm" role="button">Actualizar</a>
+                <a th:href="@{/delete/{id}(id=${usuarios.id})}" class="btn btn-danger btn-sm" role="button">Eliminar</a>
             </td>
         </tr>
         </tbody>

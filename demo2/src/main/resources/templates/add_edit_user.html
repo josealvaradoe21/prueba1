@@ -10,21 +10,21 @@
     
 <div class="container">
     <h5>Añadir/Editar</h5>
-    <form action="#" th:action="@{/addEdit}" method="post" th:object="${movie}">
+    <form action="#" th:action="@{/addEdit}" method="post" th:object="${usuarios}">
         Nombre:<br/>
-        <input type="text" class="form-control" id="title" th:field="*{title}" placeholder="Nombre"/>
+        <input type="text" class="form-control" id="nombre" th:field="*{nombre}" placeholder="Nombre"/>
         <br/>
         Edad:<br/>
-        <input type="text" class="form-control" id="releaseYear" th:field="*{releaseYear}" placeholder="Edad"/>
+        <input type="text" class="form-control" id="edad1" th:field="*{edad}" placeholder="Edad"/>
         <br/>
         Condición:<br/>
-        <input type="text" class="form-control" id="tags" th:field="*{tags}"  placeholder="Condicion"/>
+        <input type="text" class="form-control" id="cargo" th:field="*{cargo}"  placeholder="Condicion"/>
         <br/>
         Provincia:<br/>
-        <input type="text" class="form-control" id="language" th:field="*{language}" placeholder="Provincia"/>
+        <input type="text" class="form-control" id="provincia" th:field="*{provincia}" placeholder="Provincia"/>
         <br/>
         Dirección:<br/>
-        <input type="text" class="form-control" id="country" th:field="*{country}" placeholder="Direccion"/>
+        <input type="text" class="form-control" id="direccion" th:field="*{direccion}" placeholder="Direccion"/>
         <input type="hidden" id="id" th:field="*{id}">
         <br/>
         <button type="submit" class="btn btn-info">Aceptar</button>

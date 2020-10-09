@@ -4,6 +4,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,83,62,1) 47%, rgb
         
         border:2px solid #ffffff;
 }
+#login{
+	text-align:center;
+	margin:20px;
+}
 #cabecera{
        
         height:10%;
@@ -54,12 +58,6 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 
 
-
-#izquierda{
-        height:50%;
-        background:	#FFFFFF;
-       
-}
 #derecha{
         height:50%;
         
@@ -67,7 +65,7 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
         
 }
 #pie{
-        margin: 50px;
+        
         height:20%;
         text-align: center;
         

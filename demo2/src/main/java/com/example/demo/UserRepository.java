@@ -3,6 +3,6 @@ package com.example.demo;
 import org.springframework.data.repository.CrudRepository;
 
 
-public interface MovieRepository extends CrudRepository<Movie, Long> {
+public interface UserRepository extends CrudRepository<Usuario2, Long> {
 }
 
