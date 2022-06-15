@@ -1,2 +1,2 @@
 # prueba1
-Diseño opcional
+Plantilla basica de CRUD usando solo Javascript, HTML y CSS
