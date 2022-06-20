@@ -10,28 +10,28 @@
 
 <body>
 
-	<h1><center>JavaScript CRUD Tutorial</center></h1>
+	<h2><center>JavaScript CRUD Tutorial</center></h2>
 	<hr>
 			<div class="employee-form">
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <label>Nombre completo</label><label class="validation-error hide" id="fullNameValidationError">Este campo es obligatorio</label>
                         <input type="text" name="fullName" id="fullName">
                     </div>
                     <div>
-                        <label>Email Id</label>
+                        <label>Correo electronico</label>
                         <input type="text" name="email" id="email">
                     </div>
                     <div>
-                        <label>Salary</label>
+                        <label>Salario</label>
                         <input type="text" name="salary" id="salary">
                     </div>
                     <div>
-                        <label>City</label>
+                        <label>Ciudad</label>
                         <input type="text" name="city" id="city">
                     </div>
                     <div  class="form-action-buttons">
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Enviar">
                     </div>
                 </form>
 		</div>
@@ -40,11 +40,11 @@
                 <table class="list" id="employeeList">
                     <thead>
                         <tr>
-                            <th>Full Name</th>
-                            <th>Email Id</th>
-                            <th>Salary</th>
-                            <th>City</th>
-                            <th>Actions</th>
+                            <th>Nombre completo</th>
+                            <th>Correo electronico</th>
+                            <th>Salario</th>
+                            <th>Ciudad</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
